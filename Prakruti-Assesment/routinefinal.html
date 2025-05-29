@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine Planner</title>
+    <link rel="stylesheet" href="routinefinal.css">
+</head>
+<body>
+    <header>
+        <h1>Routine Planner</h1>
+    </header>
+    <div id="options">
+        <button id="create-routine-btn">Create Your Own Routine</button>
+        <button id="ai-routine-btn">AI-Generated Routine</button>
+    </div>
+
+    <div id="routine-builder" style="display: none;">
+        <!-- Interface for creating your own routine -->
+        <h2>Create Your Own Routine</h2>
+        <div id="activity-list">
+            <!-- Activity items will be dynamically added here -->
+        </div>
+        <button id="add-activity-btn">Add Activity</button>
+        <button id="save-routine-btn">Save Routine</button>
+        <h3>My Routine</h3>
+        <ul id="my-routine"></ul>
+    </div>
+
+    <div id="ai-routine" style="display: none;">
+        <!-- Interface for AI-generated routine -->
+        <h2>AI-Generated Routine</h2>
+        <h3>Select Purpose:</h3>
+        <select id="purpose-select">
+            <option value="weight_gain">Weight Gain</option>
+            <option value="weight_loss">Weight Loss</option>
+            <option value="strength_training">Strength Training</option>
+            <option value="cardio">Cardio</option>
+            <option value="flexibility">Flexibility</option>
+            <option value="endurance">Endurance</option>
+            <option value="muscle_building">Muscle Building</option>
+            <option value="stress_relief">Stress Relief</option>
+            <option value="balance">Balance</option>
+            <option value="general_fitness">General Fitness</option>
+        </select>
+        <button id="generate-ai-routine-btn">Generate AI Routine</button>
+        <h3>AI Routine</h3>
+        <ul id="ai-routine-list"></ul>
+    </div>
+
+    <script src="rout.js"></script>
+</body>
+</html>

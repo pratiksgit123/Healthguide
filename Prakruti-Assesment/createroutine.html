@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine</title>
+    <link rel="stylesheet" href="createroutine.css">
+</head>
+<body>
+    <header>
+        <h1>Daily Routine</h1>
+        <div id="themeOptions">
+            <button id="lightTheme">Light Theme</button>
+            <button id="darkTheme">Dark Theme</button>
+        </div>
+    </header>
+    <main>
+        <div id="notification"></div>
+        <div id="activityForm">
+            <label for="startTime">Start Time:</label>
+            <input type="time" id="startTime" required>
+            <label for="endTime">End Time:</label>
+            <input type="time" id="endTime" required>
+            <label for="activity">Activity:</label>
+            <input type="text" id="activity" required>
+            <button id="addActivity">Add Activity</button>
+            <button id="printRoutine">Print Routine</button>
+        </div>
+        <div id="routine">
+            <h2>Your Routine</h2>
+            <ul id="activitiesList"></ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Daily Routine</p>
+    </footer>
+    <script src="createroutin.js"></script>
+</body>
+</html>

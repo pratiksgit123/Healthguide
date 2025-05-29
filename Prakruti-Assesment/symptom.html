@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="symptom.css">
+</head>
+<body>
+    <header>
+        <h1>Symptom Checker</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#userInfo">User Info</a></li>
+            <li><a href="#symptoms">Symptoms</a></li>
+            <li><a href="#questions">Questions</a></li>
+            <li><a href="#treatment">Treatment</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="userInfo">
+            <h2>User Information</h2>
+            <form id="userInfoForm">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                <label for="sex">Sex:</label>
+                <select id="sex" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="symptoms">
+            <h2>Symptoms</h2>
+            <div>
+                <input type="checkbox" id="symptom1" name="symptom" value="Fever">
+                <label for="symptom1">Fever</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom2" name="symptom" value="Headache">
+                <label for="symptom2">Headache</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom3" name="symptom" value="Cough">
+                <label for="symptom3">Cough</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom4" name="symptom" value="Sore Throat">
+                <label for="symptom4">Sore Throat</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom5" name="symptom" value="Fatigue">
+                <label for="symptom5">Fatigue</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom6" name="symptom" value="Muscle Pain">
+                <label for="symptom6">Muscle Pain</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom7" name="symptom" value="Nausea">
+                <label for="symptom7">Nausea</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom8" name="symptom" value="Vomiting">
+                <label for="symptom8">Vomiting</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom9" name="symptom" value="Diarrhea">
+                <label for="symptom9">Diarrhea</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom10" name="symptom" value="Shortness of Breath">
+                <label for="symptom10">Shortness of Breath</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom11" name="symptom" value="Chest Pain">
+                <label for="symptom11">Chest Pain</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom12" name="symptom" value="Dizziness">
+                <label for="symptom12">Dizziness</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom13" name="symptom" value="Rash">
+                <label for="symptom13">Rash</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom14" name="symptom" value="Abdominal Pain">
+                <label for="symptom14">Abdominal Pain</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symptom15" name="symptom" value="Loss of Appetite">
+                <label for="symptom15">Loss of Appetite</label>
+            </div>
+        </section>
+        
+        <section id="questions">
+            <h2>Questions</h2>
+            <p id="questionText"></p>
+            <input type="text">
+        </section>
+        <section id="treatment">
+            <h2>Treatment</h2>
+            <p id="treatmentText"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Symptom Checker</p>
+    </footer>
+    <script src="symptom.js"></script>
+</body>
+</html>
